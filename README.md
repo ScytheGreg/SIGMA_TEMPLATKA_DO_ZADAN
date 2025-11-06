@@ -146,7 +146,7 @@ W klasie `sinol.cls` są automatycznie załadowane m.in.:
 ## 🧠 Autor
 
 **Projekt SINOL LaTeX**
-Autor: *[Twoje imię i nazwisko lub alias]*
+Autor: *Grzegorz Kaczmarek*
 Licencja: MIT (można dowolnie modyfikować i używać w pracach dydaktycznych)
 
 ---
