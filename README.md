@@ -46,40 +46,55 @@ SIGMA_TEMPLATKA_DO_ZADAN/
 ## 🧩 Przykładowe użycie
 
 ```latex
+% ============================================
+%  main.tex — przykład użycia klasy sinol.cls
+% ============================================
+
 \documentclass{sinol}
 
-% Dane do nagłówka
+% --------------------------------------------
+% Dane nagłówka
+% --------------------------------------------
 \ustawAutor{Jan Kowalski}
 \ustawPrzedmiot{Matematyka dyskretna}
-\ustawSeria{3}
-\ustawNrZadania{5, 6}
+\ustawSeria{DOM\_1}
+\ustawNrZadania{1, 2}
 
-% Ustawienia znaków ASCII
+% --------------------------------------------
+% Konfiguracja znaków ASCII
+% --------------------------------------------
 \ustawZnakNaglowka{=}
 \ustawZnakRamki{*}
 \ustawZnakRozwiazania{-}
 
+% ============================================
+% TREŚĆ DOKUMENTU
+% ============================================
 \begin{document}
-\begin{multicols}{2}
+\begin{multicols}{2} % dwie kolumny A5 obok siebie
 
+% ==== Zadanie nr 1 ====
 \begin{zadanie}
-5. Udowodnij, że jeśli graf $G$ jest dwudzielny, to nie zawiera cykli o nieparzystej długości.
+1. Treść zadania.
+\blindtext
 \end{zadanie}
 
 \begin{rozwiazanie}
-Graf dwudzielny można pokolorować dwoma kolorami, tak że każda krawędź łączy wierzchołki o różnych kolorach.
+\blindtext[2]
 \end{rozwiazanie}
 
+% ==== Zadanie nr 2 ====
 \begin{zadanie}
-6. Policz liczbę permutacji zbioru $\{1,2,3,4,5\}$, w których żaden element nie stoi na swoim miejscu.
+2. Treść zadania.
 \end{zadanie}
 
 \begin{rozwiazanie}
-Liczba derangementów $!5 = 44$.
+\blindtext[1]
 \end{rozwiazanie}
 
 \end{multicols}
 \end{document}
+
 ```
 
 ---
@@ -125,7 +140,7 @@ W klasie `sinol.cls` są automatycznie załadowane m.in.:
 * `needspace` – kontrola łamania stron
 * `blindtext` – tekst przykładowy
 * `amsmath`, `amssymb`, `amsthm` – rozszerzenia matematyczne
-* `mathtools`, `bm`, `physics`, `siunitx` – dodatkowe symbole, makra i jednostki SI
+* `mathtools`, `bm`, `siunitx` – dodatkowe symbole, makra i jednostki SI
 
 ---
 
@@ -145,7 +160,7 @@ W klasie `sinol.cls` są automatycznie załadowane m.in.:
 
 ## 🧠 Autor
 
-**Projekt SINOL LaTeX**
+**Projekt SIGMA_TEMPLATKA_DO_ZADAN LaTeX**
 Autor: *ScytheGreg*
 Licencja: MIT (można dowolnie modyfikować i używać w pracach dydaktycznych)
 
