@@ -1,6 +1,6 @@
 % ============================================
 %  sinol.cls — klasa LaTeX dla kart zadań
-%  Autor: [opcjonalnie wpisz swoje nazwisko]
+%  Autor: [ScytheGreg]
 %  Wersja: 2025-11-06
 %  Opis:
 %    Klasa dokumentu do generowania kart zadań SINOL.
