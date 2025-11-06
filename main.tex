@@ -1,0 +1,48 @@
+% ============================================
+%  main.tex — przykład użycia klasy sinol.cls
+% ============================================
+
+\documentclass{sinol}
+
+% --------------------------------------------
+% Dane nagłówka
+% --------------------------------------------
+\ustawAutor{Jan Kowalski}
+\ustawPrzedmiot{Matematyka dyskretna}
+\ustawSeria{DOM\_1}
+\ustawNrZadania{1, 2}
+
+% --------------------------------------------
+% Konfiguracja znaków ASCII
+% --------------------------------------------
+\ustawZnakNaglowka{=}
+\ustawZnakRamki{*}
+\ustawZnakRozwiazania{-}
+
+% ============================================
+% TREŚĆ DOKUMENTU
+% ============================================
+\begin{document}
+\begin{multicols}{2} % dwie kolumny A5 obok siebie
+
+% ==== Zadanie nr 1 ====
+\begin{zadanie}
+1. Treść zadania.
+\blindtext
+\end{zadanie}
+
+\begin{rozwiazanie}
+\blindtext[2]
+\end{rozwiazanie}
+
+% ==== Zadanie nr 2 ====
+\begin{zadanie}
+2. Treść zadania.
+\end{zadanie}
+
+\begin{rozwiazanie}
+\blindtext[1]
+\end{rozwiazanie}
+
+\end{multicols}
+\end{document}
