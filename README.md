@@ -20,7 +20,7 @@ Klasa `sinol.cls` została stworzona do przygotowywania **kart zadań** w stylu 
 ## 🧱 Struktura repozytorium
 
 ```
-sinol/
+SIGMA_TEMPLATKA_DO_ZADAN/
 │
 ├── sinol.cls         # Główna klasa LaTeX
 ├── main.tex          # Przykładowy plik pokazujący użycie
