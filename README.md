@@ -146,10 +146,19 @@ W klasie `sinol.cls` są automatycznie załadowane m.in.:
 ## 🧠 Autor
 
 **Projekt SINOL LaTeX**
-Autor: *Grzegorz Kaczmarek*
+Autor: *ScytheGreg*
 Licencja: MIT (można dowolnie modyfikować i używać w pracach dydaktycznych)
 
 ---
 
 > 💡 Wersja: 2025-11-06
 > Klasa przetestowana na: TeX Live 2024 / MiKTeX 24.3
+
+---
+
+## 🇬🇧 English Summary
+
+The `sinol.cls` class provides a clean, horizontally oriented **A4 LaTeX layout** for creating **two A5-sized problem sheets** side by side.
+It includes ASCII-style headers and borders, configurable metadata (author, subject, task series), and math-ready environments for problem statements and solutions.
+All visual elements — including borders and header rules — can be customized using single-character patterns (`=`, `#`, `%`, etc.).
+The class is fully compatible with Polish and English languages via `babel`, and is ideal for academic exercise sheets or competitions.
