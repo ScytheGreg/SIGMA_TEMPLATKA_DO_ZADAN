@@ -31,6 +31,7 @@
 \RequirePackage{etoolbox}         % Rozszerzone makra
 \RequirePackage{blindtext}        % Tekst przykładowy
 \RequirePackage{needspace}        % Kontrola miejsca przed elementami
+\RequirePackage{xparse}           % Reguluje wielkość nawiasów
 
 % ============================================
 % 2.1. PAKIETY MATEMATYCZNE
@@ -139,8 +140,10 @@
       \noindent\ZnakRamki\hspace{0.5em}%
       \begin{minipage}{\dimexpr\linewidth-2em\relax}
         \vspace{0.5em}
+        \begin{flushleft}
 }{%
-        \vspace{0.5em}
+        \end{flushleft}
+        \vspace{-0.6em}
       \end{minipage}%
       \hspace{0.5em}\ZnakRamki\par
       \drawline{\ZnakRamki}{\linewidth}       % dolna linia ramki
@@ -162,7 +165,7 @@
   \textbf{Rozwiązanie.}\par\smallskip
 }{%
   \par\nobreak\penalty10000\relax
-  \vskip 0pt plus 2\baselineskip
+  \vskip -0.5em plus 2\baselineskip
   \drawline{\ZnakRozwiazania}{\linewidth}
   \par\medskip
 }
@@ -175,7 +178,18 @@
 \setlength{\headheight}{24pt} % poprawione — zgodne z fancyhdr
 \setlength{\footskip}{6pt}    % bez warningów
 
+%=============================================
+% 11. NOWE FUNKCJE
+%=============================================
+
+\makeatletter
+\newcommand\Par[1]{% Ta funkcja autoamtycznie rysuje nawiasy o dobrej wielkości
+  \left(#1\right)%
+  \@ifnextchar\bgroup{\@xp\Par}{\relax}%
+}
+\makeatother
+
 % ============================================
-% 11. KONIEC KLASY
+% 12. KONIEC KLASY
 % ============================================
 \endinput
