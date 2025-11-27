@@ -32,6 +32,7 @@
 \RequirePackage{blindtext}        % Tekst przykładowy
 \RequirePackage{needspace}        % Kontrola miejsca przed elementami
 \RequirePackage{xparse}           % Reguluje wielkość nawiasów
+\RequirePackage{lastpage}
 
 % ============================================
 % 2.1. PAKIETY MATEMATYCZNE
@@ -127,6 +128,8 @@
   \vspace{-0.3em}%
 }
 \makeatother
+
+\fancyfoot[R]{\textbf{Str.  \thepage/\pageref{LastPage}}}
 
 % ============================================
 % 8. ŚRODOWISKO: ZADANIE
